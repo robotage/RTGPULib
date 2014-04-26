@@ -38,7 +38,7 @@ By default, the software will use the first webcam it finds (OpenCV device 0). I
 The general process is to select a test from the drop down box, enter any parameters that might be required (such as a kernel width) and then press the "Run once" button to get a single execution 
 or "Run continuously" to run the test at a maximum of around 10 tests per second. The average execution time is accumulated in continuous mode.
 
-### Some details of RTIMULib
+### Some details of RTGPULib
 
 The general concept revolves around image slots in device memory. By default, there are six user slots and two internal slots. Kernels generally take one or two slot 
 numbers as parameters. The idea is that images can remain in device memory across multiple kernel calls in a standardized way. This simplifies building up complex sequences 
@@ -58,4 +58,4 @@ can be used to create a threholded version of the image in slot 0 and place the 
 
 would copy the result from device memory to host memory for display.
 
-Check out RTGPUTestThread for more examples of how this all works.
+Check out RTGPUTestThread.cpp for more examples of how this all works.
