@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{7842edc1-ffa8-4908-adf4-8cd817e74bb6}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{99d6dfec-58bc-49f6-8e7c-ff91b4a72ee9}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="RTGPULib">
+      <UniqueIdentifier>{b62f8431-8606-4c2b-83d5-c98730e83140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTGPULib\Header Files">
+      <UniqueIdentifier>{0d68fd1c-72e1-481b-8ea5-263f5f8b2a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTGPULib\Source Files">
+      <UniqueIdentifier>{93f147fd-e999-47b4-b78d-b93fd3eab773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTGPULib\Kernels">
+      <UniqueIdentifier>{2a5c7c5a-cabf-412a-bc27-ade0f69a7aad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTGPUTestBench.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RTGPUTestBench.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RTGPUTestBench.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_RTGPUTestBench.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RTGPULib\src\RTGPU.cpp">
+      <Filter>RTGPULib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTGPUTestThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RTGPUTestThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RTGPUTestThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraIF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RTGPUTestBench.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RTGPUTestBench.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RTGPUTestBench.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RTGPUTestThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_RTGPUTestBench.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RTGPULib\header\RTGPU.h">
+      <Filter>RTGPULib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RTGPULib\header\RTGPUDefs.h">
+      <Filter>RTGPULib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraIF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\RTGPULib\kernels\boxFilter.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\RTGPUMain.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\thresholdKernel.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\edge.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\median.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\median3x3.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\convKernel.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\convolutionSeparable.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\arrayOps.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\scalarOps.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\morphOps.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\JPEGEncoder.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\RTGPULib\kernels\JPEGDecoder.cu">
+      <Filter>RTGPULib\Kernels</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
