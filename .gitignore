@@ -10,6 +10,7 @@ release/
 objects/
 Output/
 GeneratedFiles/
+*.deps
 *.log.*
 *.exe
 *.lib
