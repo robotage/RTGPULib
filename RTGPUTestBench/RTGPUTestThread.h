@@ -41,9 +41,9 @@ typedef void (RTGPUTestThread::*TESTFUNCPTR)();
 
 typedef struct
 {
-	char *name;												// name of test for the dialog box
+    const char *name;										// name of test for the dialog box
 	TESTFUNCPTR	func;										// the actual function
-	char *prompt;											// the params prompt
+    const char *prompt;										// the params prompt
 } TESTFUNCTION;
 
 

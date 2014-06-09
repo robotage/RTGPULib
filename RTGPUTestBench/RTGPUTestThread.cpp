@@ -652,7 +652,6 @@ void RTGPUTestThread::testArrayOps()
 {
 	int type, mask;
 	bool useMask;
-	bool cpuColor;
 
 	type = mask = 0;
 	QStringList list = m_settings.params.split(" ");
@@ -910,7 +909,7 @@ void RTGPUTestThread::testJPEGEncoder()
 
 void RTGPUTestThread::testJPEGDecoder()
 {
-	int w, h, size, jpegBytes;
+    int w, h, size;
 	QImage img;
 	QImage imgRGB;
 	QByteArray frame;
